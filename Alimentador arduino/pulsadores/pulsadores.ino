@@ -26,6 +26,7 @@ void puls1(){//incrementa modo
   if( estadoPulsador2 == LOW){
     if(modo == 0 ) {
        nroDePasos= nroDePasos+1;
+      delay(200);
        if( nroDePasos>1000){
         lcd.setCursor(8,0);
         lcd.print("P:     ");
