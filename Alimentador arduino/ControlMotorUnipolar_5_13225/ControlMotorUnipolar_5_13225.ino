@@ -77,7 +77,7 @@ pinMode(bobina2b,OUTPUT);
 
 nroDePasos1V=48;//48 => 1 vuelta
 
-nroDePasos=48;
+nroDePasos=1;//que empiece con 1 paso
 
 }
 
@@ -336,7 +336,7 @@ void secuencia8Pasos(){
 
   void estableceVelocidad() {
   lecturaPote = analogRead(A0); // Reads the potentiometer
-  velocidad = map(lecturaPote, 0, 1023, 100,5000); // Convrests the read values of the potentiometer from 0 to 1023 into desireded delay values (300 to 4000)
+  velocidad = map(lecturaPote, 0, 1023, 100, 5000); // Convrests the read values of the potentiometer from 0 to 1023 into desireded delay values (300 to 4000)
   espera = velocidad;
      espera = 2500;
 }
